@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Desarrollo de paginas web, manejo de redes sociales y desarrollo de softwere on cloud.">
+    <meta name="autor" content="Cristian Roldan"> 
+    <meta name="keywords" content="internet, web, desarrollo, softwere, cloud">
+    <link rel="icon" href="img/logo/logo_1.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>Wired In</title>
+    <style>
+    html, body {
+        height: 100%;
+    }
+    .bloque{
+        height: 100%;
+    }
+    h3{
+        margin-bottom: 30vh;
+    }
+    </style>
+</head>
+
+<body>
+<section id="home">
+    <div class="row">
+        <div class="col s12">
+            <div class="slider fullscreen">
+                <ul class="slides">
+                    <li>
+                        <img src="img/fondos/camiones3.jpg" alt="">
+                        <div class="caption right-align">
+                            <h1 class="blue-text">¿Enviar o transportar?</h1>
+                            <h3 class="blue-text">Este es el lugar para hacerlo.</h3>
+                            <button class="btn">Quiero enviar.</button>
+                            <button class="btn">Quiero transportar.</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/fondos/entrega2.jpg" alt="">
+                        <div class="caption right-align">
+                            <h1 class="blue-text">Servicio Puerta a Puerta</h1>
+                            <h3 class="blue-text">Se retira o se entrega en los lugares acordados.</h3>
+                            <button class="btn">Quiero enviar.</button>
+                            <button class="btn">Quiero transportar.</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/fondos/geolocalizacion.jpg" alt="">
+                        <div class="caption right-align">
+                            <h1 class="blue-text">Geolocalizacion</h1>
+                            <h3 class="blue-text">Segui tu paquete minuto a minuto.</h3>
+                            <button class="btn">Quiero enviar.</button>
+                            <button class="btn">Quiero transportar.</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="explicacion"></section>
+
+
+
+<!--Footer-->
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="white-text">FleteXpress</h5>
+            <p class="grey-text text-lighten-4"></p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">instagram</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">linked in</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">whatsapp</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">git hub</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        © 2019 Copyright FleteXpress
+        <a class="grey-text text-lighten-4 right" href="#home">Home</a>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    //fixed action button
+    $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton();
+    });
+    //slider
+    $(document).ready(function(){
+        $('.slider').slider();
+    });
+    //sidenav
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+    //carrousel
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems,{indicators: true});
+        instance.next();
+    });
+    //boton flotante
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, {});
+    });
+    //paralax
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+    //elementos colapsables
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {accordion: false});
+     //imagenes de material box
+     $(document).ready(function(){
+        $('.materialboxed').materialbox();
+    });
+</script>
+</body>
+</html>
